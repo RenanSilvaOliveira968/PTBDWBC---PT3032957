@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>IFSP - Pirituba</title>
+<script src="js/disabling.js"></script>
+
+<style>
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  div{
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu{
+    background-color: rgb(85, 83, 83);
+    height: 65px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 10px
+
+  }
+  #fim{
+    width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+
+  }
+
+
+  .letra{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .botao{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    border: none;
+    background-color: rgb(85, 83, 83);
+  }
+
+  .descer{
+    position: relative;
+  display: inline-block;
+  }
+
+  .descer:hover .suspenso {
+  display: block;
+}
+
+  .suspenso{
+    display: none;
+
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+
+  .letra:hover{
+    background-color: red;
+    height: 50%;
+    text-decoration: none;
+
+  }
+
+  .container{
+    display: flex;
+    gap: 15px
+  }
+
+
+</style>
+
+
+
+</head>
+<body>
+  <header>  
+
+    <section class="container" >
+    <div   class=menu id="my_menu">
+	  <a class=letra href="index.html" target="_top">HOME</a>
+    <a class="letra" href="eventos.html" target="_top">EVENTOS</a> 
+    <a class="letra" href="contato.html" target="_top">CONTATO</a>
+    
+    <div class="descer">
+      <button class="botao">CURSOS</button>
+        <div class="suspenso">
+          <a style="text-decoration: none;" href="" target="_top">Analise e Desenvolvimento De Sistemas</a>
+          <a style="text-decoration: none;"href="" target="_top">Engenharia de Produção</a>
+        </div>
+    </div>
+    <a class="letra" href="entrar.html" target="_top">ENTRAR</a>
+    <a id="fim" href="sobre.html" target="_top"><span class="letra">SOBRE</span> </a>
+    </div>
+    
+  </section>
+
+  </header>  
+</body>
+</html>
