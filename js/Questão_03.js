@@ -10,6 +10,5 @@ alunos.forEach(aluno => {
     const notaFinal = nota1Peso + nota2Peso;
 
     alert(`Aluno: ${aluno.nome}\nNota 1: ${aluno.nota1}\nNota 2: ${aluno.nota2}`);
-    alert(`
-
-
+    alert(`Nota final de ${aluno.nome}: ${notaFinal}`);
+});
